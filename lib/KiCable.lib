@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# HeatShrink
+#
+DEF ~HeatShrink HEATSHRINK 0 40 N Y 1 F N
+F0 "HEATSHRINK" 0 0 50 H I C CNN
+F1 "HeatShrink" 0 0 50 H I C CNN
+F2 "" 650 300 50 H I C CNN
+F3 "" 650 300 50 H I C CNN
+F4 "No" 500 500 50 H I C CNN "Anchor"
+F5 "1\"" 0 0 50 H I C CNN "HeatShrink-Length"
+F6 "Unspecified" 0 0 50 H I C CNN "HeatShrink-Diameter"
+F7 "Black" 0 0 50 H I C CNN "HeatShrink-Color"
+F8 "Lap" 0 0 50 H I C CNN "HeatShrink-Joint Type"
+DRAW
+P 2 0 1 0 -100 20 50 20 N
+P 2 0 1 0 0 0 -50 0 N
+P 2 0 1 0 50 -20 -100 -20 N
+X ~ 1 -50 0 0 R 50 50 1 1 B
+X ~ 1 0 0 0 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Wire
+#
+DEF ~Wire WIRE 0 40 N Y 1 F N
+F0 "WIRE" 0 0 50 H I C CNN
+F1 "Wire" 0 0 50 H I C CNN
+F2 "" -100 -50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+F4 "No" 0 0 50 H I C CNN "Anchor"
+F5 "Default" 0 40 25 H V C CNN "Wire-Color"
+F6 "6\"" 315 40 25 H V R CNN "Wire-Length"
+F7 "24 AWG" -315 40 25 H V L CNN "Wire-Gauge"
+F8 "7/32" 0 0 50 H I C CNN "Wire-Strand"
+F9 "PVC" 0 0 50 H I C CNN "Wire-Insulation Material"
+F10 ".016\"" 0 0 50 H I C CNN "Wire-Insulation Size"
+DRAW
+P 2 0 1 35 -300 0 300 0 N
+X ~ 1 -400 0 100 R 50 50 1 1 B
+X ~ 2 400 0 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,7 @@
+{
+    "python.jediEnabled": false,
+    "files.associations": {
+        "*.md": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
