@@ -168,7 +168,7 @@ class TableMaker():
 
     def formatCSV(self):
         # sort table by Row Label
-        self.sortTable();
+        self.smartSort()
         # strip ROW LABELS
         import copy
         formattedTable = copy.deepcopy(self.table)
@@ -178,7 +178,77 @@ class TableMaker():
     
     def sortTable(self):
         # sort rows by path name, leave HEADER row at top
-        self.table.sort();
+        self.table.sort()
+
+    # Smart sort groups the rows by the labels on either side and 
+    # orders by pin number, left side priority
+    def smartSort(self):
+
+
+        # find the 'Label' and 'Position' columns
+        labelColumns = []
+        positionColumns = []
+        for i, col in enumerate(self.table[0]):
+            if col == 'Label':
+                labelColumns.append(i)
+            elif col == 'Position':
+                positionColumns.append(i)
+
+        if labelColumns and positionColumns:
+
+            # get number and label of groups on both sides
+            groups = []
+            for i, col in enumerate(labelColumns):
+                groups.append([])
+                for row in self.table:
+                    if row[col] and row[col] != 'Label':
+                        if not row[col] in groups[i]:
+                            groups[i].append(row[col])
+
+            print groups
+
+            # determine which label/position set has priority
+            prioritySet = 0
+            numLabels = 1
+            for i, group in enumerate(groups):
+                if len(group) > 1 and len(group) > numLabels:
+                    prioritySet = i
+                    numLabels = len(group)
+
+            print prioritySet, numLabels
+
+            # split content from headers and into groups by label sets
+            labelSets = []
+            for i, label in enumerate(groups[prioritySet]):
+                print groups[prioritySet]
+                print label
+                labelSets.append([])
+                for j, row in enumerate(self.table):
+                    if(j>0 and row[labelColumns[prioritySet]] == label):
+                        labelSets[i].append(row)
+
+            # convert position columns to number
+            for group in labelSets:
+                for row in group:
+                    for col in positionColumns:
+                        try:
+                            number = int(row[col])
+                            row[col] = number
+                        except ValueError:
+                            #Handle the exception
+                            True
+
+            # sort each labelSet
+            from operator import itemgetter
+            for i, group in enumerate(labelSets):
+                labelSets[i] = sorted(group, key=itemgetter(positionColumns[0]))
+
+            # recombine headerRow and labelSets
+            rowCount = 0
+            for i, group in enumerate(labelSets):
+                for j, row in enumerate(group):
+                    self.table[rowCount+1] = row
+                    rowCount += 1
 
     def printTable(self):
         for row in self.table:
