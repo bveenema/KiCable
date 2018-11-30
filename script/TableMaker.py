@@ -67,8 +67,10 @@ class TableMaker():
             component['Standard Component'] = True
             fields = ['Position', 'Label']
         # strip any "Anchor" Fields
-        if 'Anchor' in fields:
-            fields.remove('Anchor')
+        for field in fields:
+            if 'INFO' in field or 'Anchor' in field:
+                fields.remove(field);
+        
         # check to make sure the new headers are not the same as the last headers
         if( set(fields) != set(currentHeaders[-len(fields):]) ):
             for header in fields:
@@ -161,7 +163,9 @@ class TableMaker():
         for field in fields:
             if(field == 'Terminal'):
                 cellValues.append({'fieldName': field, 'value': KiCadComponent.getValue()})
-            elif(field != "Anchor"): 
+            elif(field != "Anchor" and 'INFO' not in field):
+                # if(field != "Anchor" and 'INFO' not in field):
+                #     print field
                 cellValues.append({'fieldName': field, 'value': KiCadComponent.getField(field)})
         for cell in cellValues:
             self.updateCell(cell['value'], cell['fieldName'], path['name'])
