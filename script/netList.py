@@ -1,7 +1,7 @@
 def getNetList(net):
-    nets = net.nets;
+    nets = net.nets
 
-    netList = [];
+    netList = []
     # [
     #     {
     #         netName: "Net-(PIN3-Pad1)",
@@ -15,45 +15,45 @@ def getNetList(net):
 
     # add nets to components
     for thisNet in nets:
-        newNet = {};
-        newNet['netName'] = thisNet.attributes['name'];
+        newNet = {}
+        newNet['netName'] = thisNet.attributes['name']
 
-        nodes = thisNet.getChildren();
+        nodes = thisNet.getChildren()
 
-        newNet['nodes'] = [];
+        newNet['nodes'] = []
         for node in nodes:
-            nodeDict = {};
-            nodeDict['ref'] = node.attributes['ref'];
-            nodeDict['pin'] = node.attributes['pin'];
+            nodeDict = {}
+            nodeDict['ref'] = node.attributes['ref']
+            nodeDict['pin'] = node.attributes['pin']
             
-            newNet['nodes'].append(nodeDict);
+            newNet['nodes'].append(nodeDict)
 
-        netList.append(newNet);
-    return netList;
+        netList.append(newNet)
+    return netList
 
 def printNetList(netList):
     for net in netList:
-        print("Net Name: ", net['netName']);
-        print("Nodes: ", net['nodes']);
-        print("----------");
+        print("Net Name: ", net['netName'])
+        print("Nodes: ", net['nodes'])
+        print("----------")
 
 def getNetRefs(lastNet, lastRef, netList):
-    refs = [];
+    refs = []
     for net in netList:
         if(lastNet == net['netName']):
             for node in net['nodes']:
                 if(node['ref'] != lastRef):
-                    refs.append(node['ref']);
-    return refs;
+                    refs.append(node['ref'])
+    return refs
 
 def getNextNets(ref, componentList, lastNet):
-    from componentList import getComponent;
-    nextNets = [];
-    component = getComponent(ref, componentList);
+    from componentList import getComponent
+    nextNets = []
+    component = getComponent(ref, componentList)
     if(component):
         for connection in component['connections']:
             if(connection['net'] != lastNet):
-                nextNets.append(connection['net']);
-        return nextNets;
+                nextNets.append(connection['net'])
+        return nextNets
     else:
-        return None;
+        return None
