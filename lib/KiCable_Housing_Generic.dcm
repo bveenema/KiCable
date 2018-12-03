@@ -40,18 +40,6 @@ $CMP HOUSING_FEMALE_01_10
 D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
 $ENDCMP
 #
-$CMP HOUSING_FEMALE_01_10
-D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
-$ENDCMP
-#
-$CMP HOUSING_FEMALE_01_10
-D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
-$ENDCMP
-#
-$CMP HOUSING_FEMALE_01_10
-D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
-$ENDCMP
-#
 $CMP HOUSING_FEMALE_01_11
 D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
 $ENDCMP
