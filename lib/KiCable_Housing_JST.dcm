@@ -64,4 +64,68 @@ $CMP PHR-9
 D JST PH Series Housing. Designed to work with PH Series Terminals. Housing will appear complete on schematic after PH series terminals are placed inside. Standard color: White
 $ENDCMP
 #
+$CMP XHP-1
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-10
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-11
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-12
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-13
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-14
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-15
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-16
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-2
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-3
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-4
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-5
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-6
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-7
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-8
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP XHP-9
+D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
 #End Doc Library

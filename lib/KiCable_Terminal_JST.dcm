@@ -12,4 +12,16 @@ $CMP SPH-004T-P0.5S
 D JST PH Series Terminal. For 28-32 AWG wire, 0.5 to 0.9mm Insulation OD. Designed to be placed inside PHR Housings.
 $ENDCMP
 #
+$CMP SXH-001T-P0.6
+D JST XH Series Terminal. For 22-28 AWG wire, 0.9 to 1.9mm Insulation OD. Designed to be placed inside XHP Housings.
+$ENDCMP
+#
+$CMP SXH-001T-P0.6N
+D JST XH Series Terminal. LOW Insertion Force variant. For 22-26 AWG wire, 1.3 to 1.9mm Insulation OD. Designed to be placed inside XHP Housings.
+$ENDCMP
+#
+$CMP SXH-002T-P0.6
+D JST XH Series Terminal. For 26-30 AWG wire, 0.9 to 1.3mm Insulation OD. Designed to be placed inside XHP Housings.
+$ENDCMP
+#
 #End Doc Library
