@@ -1,15 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP SPH-002T-P0.5L
-D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+D JST PH Series Terminal. For 24-28 AWG wire, 0.8 to 1.5mm Insulation OD. Designed to be placed inside PHR Housings.
 $ENDCMP
 #
 $CMP SPH-002T-P0.5S
-D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+D JST PH Series Terminal. For 24-30 AWG wire, 0.9 to 1.5mm Insulation OD. Designed to be placed inside PHR Housings.
 $ENDCMP
 #
 $CMP SPH-004T-P0.5S
-D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+D JST PH Series Terminal. For 28-32 AWG wire, 0.5 to 0.9mm Insulation OD. Designed to be placed inside PHR Housings.
 $ENDCMP
 #
 #End Doc Library
