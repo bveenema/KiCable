@@ -22,7 +22,7 @@ def getComponentList(net):
         newComponent = {}
         newComponent['ref'] = component.getRef()
         newComponent['connections'] = []
-        newComponent['isAnchor'] = (str.lower(component.getField("Anchor")) == "yes")
+        newComponent['isAnchor'] = (str.lower(component.getField("KICABLE_INFO:Anchor")) == "yes")
         newComponent['KiCadComponent'] = component
         componentList.append(newComponent)
 

@@ -34,6 +34,10 @@ class TableMaker():
                 row.append('')
 
     def updateCell(self, newValue, header, path):
+        # remove "KICABLE_HEADER:" from header
+        if 'KICABLE_HEADER:' in header:
+            header = header.replace('KICABLE_HEADER:', '')
+
         # find column the "header" is in
         column = -1
         for col, Header in enumerate(self.table[0]):
@@ -63,16 +67,17 @@ class TableMaker():
         else:
             fields = KiCadComponent.getFieldNames()
         # if fields does not contain 'Anchor' field, it is a standard component
-        if not 'Anchor' in KiCadComponent.getFieldNames():
+        if not 'KICABLE_INFO:Anchor' in KiCadComponent.getFieldNames():
             component['Standard Component'] = True
-            fields = ['Position', 'Label']
-        # strip any "Anchor" Fields
+            fields = ['KICABLE_HEADER:Position', 'KICABLE_HEADER:Label']
+        
+        # remove any "INFO" Fields and fields NOT containing KICABLE, string 'KICABLE_HEADER'
         cleanFields = [];
         for field in fields:
-            if 'INFO' in field or 'Anchor' in field:
-                continue
-            else:
-                cleanFields.append(field)
+            if not 'INFO' in field and 'KICABLE' in field:
+                if 'KICABLE_HEADER:' in field:
+                    newField = field.replace('KICABLE_HEADER:', '')
+                    cleanFields.append(newField)
         
         # check to make sure the new headers are not the same as the last headers
         if( set(cleanFields) != set(currentHeaders[-len(cleanFields):]) ):
@@ -96,21 +101,21 @@ class TableMaker():
     def makeHousingHeaders(self, len):
         fields = []
         if(len < 3):
-            fields = ['Label', 'Housing', 'Position']
+            fields = ['KICABLE_HEADER:Label', 'KICABLE_HEADER:Housing', 'KICABLE_HEADER:Position']
         else:
-            fields = ['Position', 'Housing', 'Label']
+            fields = ['KICABLE_HEADER:Position', 'KICABLE_HEADER:Housing', 'KICABLE_HEADER:Label']
         return fields
 
     def makeTerminalHeaders(self, KiCadComponent, currentHeaders):
         fields = []
         if 'Terminal' not in currentHeaders:
-            fields = ['Terminal']
+            fields = ['KICABLE_HEADER:Terminal']
             for field in KiCadComponent.getFieldNames():
                 fields.append(field)
         else:
             for field in KiCadComponent.getFieldNames():
                 fields.append(field)
-            fields.append('Terminal')
+            fields.append('KICABLE_HEADER:Terminal')
         return fields
 
     def populateHousingCells(self, component, KiCadComponent, Paths, NetList):
@@ -125,7 +130,7 @@ class TableMaker():
             
             position = getPosition(component['ref'], path['nets'][-1], NetList)
             if(position):
-                cellValues.append({ 'fieldName': 'Label', 'value': KiCadComponent.getField('Label') })
+                cellValues.append({ 'fieldName': 'Label', 'value': KiCadComponent.getField('KICABLE_HEADER:Label') })
                 cellValues.append({ 'fieldName': 'Housing', 'value': KiCadComponent.getValue() })
                 cellValues.append({ 'fieldName': 'Position', 'value': position })
                 remainingPositions.remove(position)
@@ -164,11 +169,9 @@ class TableMaker():
     def populateTerminalCells(self, KiCadComponent, fields, path):
         cellValues = []
         for field in fields:
-            if(field == 'Terminal'):
+            if(field == 'KICABLE_HEADER:Terminal'):
                 cellValues.append({'fieldName': field, 'value': KiCadComponent.getValue()})
             elif(field != "Anchor" and 'INFO' not in field):
-                # if(field != "Anchor" and 'INFO' not in field):
-                #     print field
                 cellValues.append({'fieldName': field, 'value': KiCadComponent.getField(field)})
         for cell in cellValues:
             self.updateCell(cell['value'], cell['fieldName'], path['name'])

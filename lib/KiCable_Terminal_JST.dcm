@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SPH-002T-P0.5L
+D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+$ENDCMP
+#
+$CMP SPH-002T-P0.5S
+D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+$ENDCMP
+#
+$CMP SPH-004T-P0.5S
+D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+$ENDCMP
+#
+#End Doc Library
