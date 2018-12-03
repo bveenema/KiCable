@@ -1,3 +1,175 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HOUSING_FEMALE_01_01
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_02
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_03
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_04
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_05
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_06
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_07
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_08
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_09
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_10
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_10
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_10
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_10
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_11
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_12
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_13
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_14
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_15
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_16
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_17
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_18
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_19
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_20
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_01
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_02
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_03
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_04
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_05
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_06
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_07
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_08
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_09
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_10
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_11
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_12
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_13
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_14
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_15
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_16
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_17
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_18
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_19
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_20
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
 #End Doc Library

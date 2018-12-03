@@ -1,3 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TERMINAL_FEMALE
+D Generic Female Terminal. Designed to be placed inside Female Housings. Contains information on wire strip length.
+$ENDCMP
+#
+$CMP TERMINAL_MALE
+D Generic Male Terminal. Designed to be placed inside Male Housings. Contains information on wire strip length.
+$ENDCMP
+#
 #End Doc Library
