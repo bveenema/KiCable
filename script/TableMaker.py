@@ -67,13 +67,16 @@ class TableMaker():
             component['Standard Component'] = True
             fields = ['Position', 'Label']
         # strip any "Anchor" Fields
+        cleanFields = [];
         for field in fields:
             if 'INFO' in field or 'Anchor' in field:
-                fields.remove(field);
+                continue
+            else:
+                cleanFields.append(field)
         
         # check to make sure the new headers are not the same as the last headers
-        if( set(fields) != set(currentHeaders[-len(fields):]) ):
-            for header in fields:
+        if( set(cleanFields) != set(currentHeaders[-len(cleanFields):]) ):
+            for header in cleanFields:
                 self.addHeader(header)
             
         # ADD CELL VALUES
