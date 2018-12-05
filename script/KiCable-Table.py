@@ -29,9 +29,13 @@ previousComponentList = []
 while(len(componentList) > 0 and previousComponentList != componentList):
     import copy
     previousComponentList = copy.deepcopy(componentList)
-    Tables.append(TableMaker())
-    table = Tables[tableCount]
+    
     Paths = CablePaths()
+
+    Tables.append(TableMaker(componentList, Paths, NetList))
+    table = Tables[tableCount]
+    tableCount += 1
+
     for component in componentList:
         if(component['isAnchor'] == True):
             # start Paths
@@ -42,7 +46,7 @@ while(len(componentList) > 0 and previousComponentList != componentList):
             table.sortTable()
             # Add Headers
             for path in Paths.getPaths():
-                table.addComponent(component, path, Components, Paths.getPaths(), NetList)
+                table.addComponent(component, path)
             # Remove Component
             componentList = removeComponent(component['ref'], componentList)
             break
@@ -65,7 +69,7 @@ while(len(componentList) > 0 and previousComponentList != componentList):
                     if(nextNets):
                         if(len(nextNets) == 1):
                             Paths.updatePath(path['name'], ref, nextNets[0])
-                        table.addComponent(component, path, Components, Paths.getPaths(), NetList)
+                        table.addComponent(component, path)
                         componentList = removeComponent(ref, componentList)
                     else:
                         path['complete'] = True
@@ -81,16 +85,15 @@ while(len(componentList) > 0 and previousComponentList != componentList):
                         ref = newPath['refs'][-1]
                         component = getComponent(ref, componentList)
                         table.addPath(newPath['name'])
-                        table.addComponent(component, newPath, Components, Paths.getPaths(), NetList)
+                        table.addComponent(component, newPath)
                         componentList = removeComponent(ref, componentList)
                     # update old path
                     ref = refs[0]
                     component = getComponent(ref, componentList)
-                    table.addComponent(component, path, Components, Paths.getPaths(), NetList)
+                    table.addComponent(component, path)
                     componentList = removeComponent(ref, componentList)
                 else:
                     path['complete'] = True
-    tableCount += 1
     print("**********************************************")
     print('Tables')
     table.printTable()

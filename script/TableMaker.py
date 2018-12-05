@@ -10,8 +10,11 @@
 #   ---------------------------------------------------------------------
 
 class TableMaker():
-    def __init__(self):
+    def __init__(self, ComponentList, Paths, NetList):
         self.table = [['HEADER']]
+        self.ComponentList = ComponentList
+        self.Paths = Paths
+        self.NetList = NetList
 
     def getNumRows(self):
         return len(self.table)
@@ -53,23 +56,24 @@ class TableMaker():
         if(column >= 0 & row >= 0):
             self.table[row][column] = newValue
 
-    def addComponent(self, component, path=None, Components=None, Paths=None, NetList=None):
+    def addComponent(self, component, path=None):
         # ADD HEADERS
-        from componentList import getKiCadComponent
-        KiCadComponent = getKiCadComponent(component['ref'], Components)
+        KiCadComponent = component['KiCadComponent']
         fields = []
         import copy
         currentHeaders = copy.copy(self.table[0])
-        if(KiCadComponent.getRef().startswith("HOUSING")):
+        if(component['ref'].startswith("HOUSING")):
             fields = self.makeHousingHeaders(len(currentHeaders))
-        elif(KiCadComponent.getRef().startswith("TERMINAL")):
-            fields = self.makeTerminalHeaders(KiCadComponent, currentHeaders)
+        elif(component['ref'].startswith("TERMINAL")):
+            fields = self.makeTerminalHeaders(component, currentHeaders)
         else:
-            fields = KiCadComponent.getFieldNames()
+            fields = component['KiCadComponent'].getFieldNames()
         # if fields does not contain 'Anchor' field, it is a standard component
-        if not 'KICABLE_INFO:Anchor' in KiCadComponent.getFieldNames():
+        if not 'KICABLE_INFO:Anchor' in component['KiCadComponent'].getFieldNames():
             component['Standard Component'] = True
-            fields = ['KICABLE_HEADER:Position', 'KICABLE_HEADER:Label']
+            fields.append('KICABLE_HEADER:Position')
+            fields.append('KICABLE_HEADER:Component')
+            
         
         # remove any "INFO" Fields and fields NOT containing KICABLE, string 'KICABLE_HEADER'
         cleanFields = [];
@@ -86,15 +90,15 @@ class TableMaker():
             
         # ADD CELL VALUES
         cellValues = []
-        if(KiCadComponent.getRef().startswith("HOUSING") and Paths and NetList):
-            self.populateHousingCells(component, KiCadComponent, Paths, NetList)
-        elif(KiCadComponent.getRef().startswith('TERMINAL')):
-            self.populateTerminalCells(KiCadComponent, fields, path)
+        if(component['ref'].startswith("HOUSING")):
+            self.populateHousingCells(component)
+        elif(component['ref'].startswith('TERMINAL')):
+            self.populateTerminalCells(component, fields, path)
         elif('Standard Component' in component):
-            self._populateStandardComponentCells(component, KiCadComponent, Paths, NetList)
+            self._populateStandardComponentCells(component, fields)
         else:
             for field in fields:
-                cellValues.append({'fieldName': field, 'value': KiCadComponent.getField(field)})
+                cellValues.append({'fieldName': field, 'value': component['KiCadComponent'].getField(field)})
             for cell in cellValues:
                 self.updateCell(cell['value'], cell['fieldName'], path['name'])
 
@@ -106,19 +110,20 @@ class TableMaker():
             fields = ['KICABLE_HEADER:Position', 'KICABLE_HEADER:Housing', 'KICABLE_HEADER:Label']
         return fields
 
-    def makeTerminalHeaders(self, KiCadComponent, currentHeaders):
+    def makeTerminalHeaders(self, component, currentHeaders):
         fields = []
         if 'Terminal' not in currentHeaders:
             fields = ['KICABLE_HEADER:Terminal']
-            for field in KiCadComponent.getFieldNames():
+            for field in component['KiCadComponent'].getFieldNames():
                 fields.append(field)
         else:
-            for field in KiCadComponent.getFieldNames():
+            for field in component['KiCadComponent'].getFieldNames():
                 fields.append(field)
             fields.append('KICABLE_HEADER:Terminal')
         return fields
 
-    def populateHousingCells(self, component, KiCadComponent, Paths, NetList):
+    def populateHousingCells(self, component):
+        Paths = self.Paths.getPaths()
         cellValues = []
         from componentList import getPosition
         remainingPositions = []
@@ -127,11 +132,10 @@ class TableMaker():
             remainingPositions.append(connection['pin'])
         for i, path in enumerate(Paths):
             #if 'component' contains 'path' position will NOT be NONE
-            
-            position = getPosition(component['ref'], path['nets'][-1], NetList)
+            position = getPosition(component['ref'], path['nets'][-1], self.NetList)
             if(position):
-                cellValues.append({ 'fieldName': 'Label', 'value': KiCadComponent.getField('KICABLE_HEADER:Label') })
-                cellValues.append({ 'fieldName': 'Housing', 'value': KiCadComponent.getValue() })
+                cellValues.append({ 'fieldName': 'Label', 'value': component['KiCadComponent'].getField('KICABLE_HEADER:Label') })
+                cellValues.append({ 'fieldName': 'Housing', 'value': component['KiCadComponent'].getValue() })
                 cellValues.append({ 'fieldName': 'Position', 'value': position })
                 remainingPositions.remove(position)
             else:
@@ -143,36 +147,53 @@ class TableMaker():
             cellValues.append({ 'fieldName': 'Position', 'value': position })
             self.updateCell(position, 'Position', unusedPaths.pop(0))
 
-    def _populateStandardComponentCells(self, component, KiCadComponent, Paths, NetList):
+    def _populateStandardComponentCells(self, component, fields):
         cellValues = []
         from componentList import getPosition
         remainingPositions = []
         unusedPaths = []
+        
         for connection in component['connections']:
-            remainingPositions.append(connection['pin'])
-        for i, path in enumerate(Paths):
-            if(i==0):
-                cellValues.append({ 'fieldName': 'Label', 'value': KiCadComponent.getValue() })
-            position = getPosition(component['ref'], path['nets'][-1], NetList)
-            if(position):
-                cellValues.append({ 'fieldName': 'Position', 'value': position })
-                remainingPositions.remove(position)
-            else:
-                unusedPaths.append(path['name'])
-            for cell in cellValues:
-                self.updateCell(cell['value'], cell['fieldName'], path['name'])
-            cellValues = []
-        for position in remainingPositions:
-            cellValues.append({ 'fieldName': 'Position', 'value': position })
-            self.updateCell(position, 'Position', unusedPaths.pop(0))
+            cells = []
+            
+            for field in fields:
+                if(field == 'KICABLE_HEADER:Component'):
+                    cells.append({ 'fieldName': field, 'value': component['KiCadComponent'].getValue() })
+                else:
+                    cells.append({'fieldName': field, 'value': component['KiCadComponent'].getField(field)})
 
-    def populateTerminalCells(self, KiCadComponent, fields, path):
+            pathName = self.Paths.getPathName(connection['net'])
+            path = self.Paths.getPath(pathName)
+            if path :
+                position = getPosition(component['ref'], path['nets'][-1], self.NetList)
+                if(position):
+                    cells.append({ 'fieldName': 'Position', 'value': position })
+
+                for cell in cells:
+                    self.updateCell(cell['value'], cell['fieldName'], path['name'])
+            elif 'MECH' in connection['pin']:
+                # get the connected component
+                from netList import getNetRefs
+                refs = getNetRefs(connection['net'], component['ref'], self.NetList)
+
+                for ref in refs:
+                    pathName = self.Paths.addPath(connection['pin'], ref, connection['net'])
+                    self.addPath(pathName)
+
+                    from componentList import getComponent
+                    self.addComponent(getComponent(ref, self.ComponentList), pathName)
+
+            else:
+                print 'FOUND PIN BUT NO PATH ASSOCIATED'
+        
+
+    def populateTerminalCells(self, component, fields, path):
         cellValues = []
         for field in fields:
             if(field == 'KICABLE_HEADER:Terminal'):
-                cellValues.append({'fieldName': field, 'value': KiCadComponent.getValue()})
+                cellValues.append({'fieldName': field, 'value': component['KiCadComponent'].getValue()})
             elif(field != "Anchor" and 'INFO' not in field):
-                cellValues.append({'fieldName': field, 'value': KiCadComponent.getField(field)})
+                cellValues.append({'fieldName': field, 'value': component['KiCadComponent'].getField(field)})
         for cell in cellValues:
             self.updateCell(cell['value'], cell['fieldName'], path['name'])
 

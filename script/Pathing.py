@@ -11,6 +11,13 @@ class CablePaths:
             if path['name'] == pathName:
                 pathToReturn = path
         return pathToReturn
+    
+    def getPathName(self, netName):
+        for path in self.paths:
+            for net in path['nets']:
+                if net == netName:
+                    return path['name']
+        return None
 
     def addPath(self, position, ref, net):
         name = "Path"+str(position)
