@@ -144,14 +144,11 @@ class TableMaker():
             cellValues = []
         for position in remainingPositions:
             cellValues.append({ 'fieldName': 'Position', 'value': position })
-            self.updateCell(position, 'Position', unusedPaths.pop(0))
+            self.updateCell(position, 'Position', unusedPaths.pop(0))s
 
     def _populateStandardComponentCells(self, component, fields):
-        cellValues = []
         from componentList import getPosition
-        remainingPositions = []
-        unusedPaths = []
-        
+                
         for connection in component['connections']:
             cells = []
             
