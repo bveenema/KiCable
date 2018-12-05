@@ -74,7 +74,6 @@ class TableMaker():
             fields.append('KICABLE_HEADER:Position')
             fields.append('KICABLE_HEADER:Component')
             
-        
         # remove any "INFO" Fields and fields NOT containing KICABLE, string 'KICABLE_HEADER'
         cleanFields = [];
         for field in fields:
