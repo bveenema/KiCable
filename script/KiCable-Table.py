@@ -64,7 +64,9 @@ while(len(componentList) > 0 and previousComponentList != componentList):
                 refs = getNetRefs(lastNet, lastRef, NetList)
                 if(len(refs) == 1):
                     ref = refs[0]
+                    print("Ref: ", ref)
                     nextNets = getNextNets(ref, componentList, lastNet)
+                    print('Next Nets:', nextNets)
                     component = getComponent(ref, componentList)
                     if(nextNets):
                         if(len(nextNets) == 1):
