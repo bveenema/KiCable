@@ -4,6 +4,46 @@ $CMP HeatShrink
 D Generic HeatShrink. Contains information on size, color, length and joint type, not displayed on schematic
 $ENDCMP
 #
+$CMP QuickConnect_Female_Blue_0.187in
+D Quick Connect Red Female Terminal. Female Terminals are designed to couple with male Quick Connect terminals. For wire gauges 14-16 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Female_Blue_0.250in
+D Quick Connect Red Female Terminal. Female Terminals are designed to couple with male Quick Connect terminals. For wire gauges 14-16 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Female_Red_0.187in
+D Quick Connect Red Female Terminal. Female Terminals are designed to couple with male Quick Connect terminals. For wire gauges 18-22 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Female_Red_0.250in
+D Quick Connect Red Female Terminal. Female Terminals are designed to couple with male Quick Connect terminals. For wire gauges 18-22 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Female_Yellow_0.250in
+D Quick Connect Red Female Terminal. Female Terminals are designed to couple with male Quick Connect terminals. For wire gauges 10-12 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Male_Blue_0.187in
+D Quick Connect Red Male Terminal. Male Terminals are designed to couple with female Quick Connect terminals. For wire gauges 14-16 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Male_Blue_0.250in
+D Quick Connect Red Male Terminal. Male Terminals are designed to couple with female Quick Connect terminals. For wire gauges 14-16 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Male_Red_0.187in
+D Quick Connect Red Male Terminal. Male Terminals are designed to couple with female Quick Connect terminals. For wire gauges 18-22 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Male_Red_0.250in
+D Quick Connect Red Male Terminal. Male Terminals are designed to couple with female Quick Connect terminals. For wire gauges 18-22 AWG
+$ENDCMP
+#
+$CMP QuickConnect_Male_Yellow_0.250in
+D Quick Connect Red Male Terminal. Male Terminals are designed to couple with female Quick Connect terminals. For wire gauges 10-12 AWG
+$ENDCMP
+#
 $CMP Wire
 D Generic Wire. Color, Gauge, and Length shown on schematic.  Other properties hidden
 $ENDCMP
