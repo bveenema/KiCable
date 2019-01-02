@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0016020074
+D Molex SL 70058 Female Terminal. For 32-36 AWG Wire. 0.64mm insulation OD Max. Designed for PS-70400 Series products, including 70066, 70107, 70450, 704130.
+$ENDCMP
+#
+$CMP 0016020082
+D Molex SL 70058 Female Terminal. For 24-30 AWG Wire. 1.52mm insulation OD Max. Designed for PS-70400 Series products, including 70066, 70107, 70450, 704130.
+$ENDCMP
+#
+$CMP 0016020087
+D Molex SL 70058 Female Terminal. For 22-24 AWG Wire. 1.63mm insulation OD Max. Designed for PS-70400 Series products, including 70066, 70107, 70450, 704130.
+$ENDCMP
+#
+#End Doc Library
