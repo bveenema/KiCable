@@ -96,4 +96,72 @@ $CMP 50-57-9425
 D Molex SL 70066 Series Housing. Compatible with all Molex PS-70400 products. Designed to work with SL 70058 and SL 71851 (High Force) Series Terminals. Mates with 70541, 70543, 70545, 70546, 70551, 70553, 70555, 70556, 70563, 70564, 70566, 70571, 70575, 70634, 701164, 74095, 74098, 74099, 74105 series headers.
 $ENDCMP
 #
+$CMP 44441-1002
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-2 Color: Natural (Translucent)
+$ENDCMP
+#
+$CMP 44441-1003
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-2 Color: Natural (Translucent)
+$ENDCMP
+#
+$CMP 44441-1004
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-2 Color: Natural (Translucent)
+$ENDCMP
+#
+$CMP 44441-1005
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-2 Color: Natural (Translucent)
+$ENDCMP
+#
+$CMP 44441-1006
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-2 Color: Black
+$ENDCMP
+#
+$CMP 44441-2002
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-2003
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-2004
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-2005
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-2006
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-2008
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA66 Nylon, UL94V-0 Color: Black
+$ENDCMP
+#
+$CMP 44441-3002
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
+$CMP 44441-3003
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
+$CMP 44441-3004
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
+$CMP 44441-3005
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
+$CMP 44441-3006
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
+$CMP 44441-3008
+D Molex Sabre 44441 Series Housing. Designed to work with Sabre 43375 Series Terminals. Mates with Sabre 43160, 43180, 43860 series headers. Material: PA6 Nylon, UL94V-2 IEC 60335-1 Glow Wire Capable Color: Black
+$ENDCMP
+#
 #End Doc Library

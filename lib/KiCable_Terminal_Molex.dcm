@@ -12,4 +12,20 @@ $CMP 0016020087
 D Molex SL 70058 Female Terminal. For 22-24 AWG Wire. 1.63mm insulation OD Max. Designed for PS-70400 Series products, including 70066, 70107, 70450, 704130.
 $ENDCMP
 #
+$CMP 433750001
+D Molex Sabre 43375 Female Terminal. For 14-16AWG Wire. 0.79mm insulation OD Max. For use with Sabre 44441 Housings
+$ENDCMP
+#
+$CMP 433751001
+D Molex Sabre 43375 Female Terminal. For 14-16 AWG Wire. 1.52mm insulation OD Max. For use with Sabre 44441 Housings
+$ENDCMP
+#
+$CMP 433752001
+D Molex Sabre 43375 Female Terminal. For 18-20 AWG Wire. 2.84mm insulation OD Max. For use with Sabre 44441 Housings
+$ENDCMP
+#
+$CMP 433753001
+D Molex Sabre 43375 Female Terminal. For 18-20 AWG Wire. 4.57mm insulation OD Max. For use with Sabre 44441 Housings
+$ENDCMP
+#
 #End Doc Library
