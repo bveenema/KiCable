@@ -8,6 +8,10 @@ $CMP Cable_3-Conductor
 D Generic Wire. Color, Gauge, and Length shown on schematic.  Other properties hidden
 $ENDCMP
 #
+$CMP Cable_8-Conductor
+D Generic Wire. Color, Gauge, and Length shown on schematic.  Other properties hidden
+$ENDCMP
+#
 $CMP HeatShrink
 D Generic HeatShrink. Contains information on size, color, length and joint type, not displayed on schematic
 $ENDCMP
