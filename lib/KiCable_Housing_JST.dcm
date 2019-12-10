@@ -64,6 +64,46 @@ $CMP PHR-9
 D JST PH Series Housing. Designed to work with PH Series Terminals. Housing will appear complete on schematic after PH series terminals are placed inside. Standard color: White
 $ENDCMP
 #
+$CMP VHR-10
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-11
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-2
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-3
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-4
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-5
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-6
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-7
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-8
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
+$CMP VHR-9
+D JST VH Series Housing. Designed to work with VH Series Terminals. Housing will appear complete on schematic after VH series terminals are placed inside. Standard color: White
+$ENDCMP
+#
 $CMP XHP-1
 D JST XH Series Housing. Designed to work with XH Series Terminals. Housing will appear complete on schematic after XH series terminals are placed inside. Standard color: White
 $ENDCMP

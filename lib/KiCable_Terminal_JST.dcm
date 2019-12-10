@@ -12,6 +12,14 @@ $CMP SPH-004T-P0.5S
 D JST PH Series Terminal. For 28-32 AWG wire, 0.5 to 0.9mm Insulation OD. Designed to be placed inside PHR Housings.
 $ENDCMP
 #
+$CMP SVH-21T-P1.1
+D JST VH Series Terminal. For 22-18 AWG wire, 1.7-3.0mm Insulation OD. Designed to be placed inside VHR Housings.
+$ENDCMP
+#
+$CMP SVH-41T-P1.1
+D JST VH Series Terminal. For 20-16 AWG wire, 1.7-3.0mm Insulation OD. Designed to be placed inside VHR Housings.
+$ENDCMP
+#
 $CMP SXH-001T-P0.6
 D JST XH Series Terminal. For 22-28 AWG wire, 0.9 to 1.9mm Insulation OD. Designed to be placed inside XHP Housings.
 $ENDCMP
