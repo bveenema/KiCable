@@ -80,6 +80,14 @@ $CMP HOUSING_FEMALE_01_20
 D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
 $ENDCMP
 #
+$CMP HOUSING_FEMALE_01_22
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_FEMALE_01_24
+D Generic Female Housing. Female Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
 $CMP HOUSING_MALE_01_01
 D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
 $ENDCMP
@@ -157,6 +165,14 @@ D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housi
 $ENDCMP
 #
 $CMP HOUSING_MALE_01_20
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_22
+D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
+$ENDCMP
+#
+$CMP HOUSING_MALE_01_24
 D Generic Male (Pin) Housing. Male Terminals are designed to fit inside of housing to look complete when finished
 $ENDCMP
 #
