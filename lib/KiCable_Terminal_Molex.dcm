@@ -29,3 +29,51 @@ D Molex Sabre 43375 Female Terminal. For 18-20 AWG Wire. 4.57mm insulation OD Ma
 $ENDCMP
 #
 #End Doc Library
+#
+$CMP 5556-T
+D Molex Mini-Fit Jr 5556 Female Terminal Brass. For 18-24 AWG Wire. 1.3-3.1mm insulation OD. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5556-T2
+D Molex Mini-Fit Jr 5556 Female Terminal Brass. For 22-28 AWG Wire. 0.9-1.8mm insulation OD. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5556-T3
+D Molex Mini-Fit Jr 5556 Female Terminal Brass. For 16 AWG Wire. 3.1mm insulation OD Max. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5556-PB
+D Molex Mini-Fit Jr 5556 Female Terminal Phos Bronze. For 18-24 AWG Wire. 1.3-3.1mm insulation OD. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5556-PB2
+D Molex Mini-Fit Jr 5556 Female Terminal Phos Bronze. For 22-28 AWG Wire. 0.9-1.8mm insulation OD. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5556-PB3
+D Molex Mini-Fit Jr 5556 Female Terminal Phos Bronze. For 16 AWG Wire. 3.1mm insulation OD Max. Designed for Mini-Fit Jr Female Series products, including  5557, 30067, 44516, and 42474. Mates with  5558, 5566, 5569, 30069, 30070, 42440, 42404, 43879, 43810, 44068.
+$ENDCMP
+#
+$CMP 5558-T
+D Molex Mini-Fit Jr 5558 Male Terminal Brass. For 18-24 AWG Wire. 1.3-3.1mm insulation OD. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
+#
+$CMP 5558-T2
+D Molex Mini-Fit Jr 5558 Male Terminal Brass. For 22-28 AWG Wire. 0.9-1.8mm insulation OD. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
+#
+$CMP 5558-T3
+D Molex Mini-Fit Jr 5558 Male Terminal Brass. For 16 AWG Wire. 3.1mm insulation OD Max. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
+#
+$CMP 5558-PB
+D Molex Mini-Fit Jr 5558 Male Terminal Phos Bronze. For 18-24 AWG Wire. 1.3-3.1mm insulation OD. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
+#
+$CMP 5558-PB2
+D Molex Mini-Fit Jr 5558 Male Terminal Phos Bronze. For 22-28 AWG Wire. 0.9-1.8mm insulation OD. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
+#
+$CMP 5558-PB3
+D Molex Mini-Fit Jr 5558 Male Terminal Phos Bronze. For 16 AWG Wire. 3.1mm insulation OD Max. Designed for Mini-Fit Jr Male Series products, including  5559, 30068, 42475. Mates with  5556.
+$ENDCMP
